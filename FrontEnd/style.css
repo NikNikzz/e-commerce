@@ -1,0 +1,30 @@
+nav a {
+    background-color: #f77014;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #e65c00;
+}
+
+.sobre-nos {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    color: #333;
+}
+  
+footer a {
+    color: #f77014;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8">  <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Compatibilidade com Internet Explorer -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos CSS -->
+
+    <title>Loja</title> <!-- Título da aba do navegador -->
 </head>
 <body>
-    
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="linha-topo">
+            <img src="img/" alt="Logo da Loja" class="logo">
+            
+            <h1 class="nomedaloja">Loja Online</h1>
+
+            <nav class="navegacao">
+                <a href="login.html">Login</a>
+                <a href="carrinho.html">Carrinho</a>
+            </nav>
+
+            <nav class="menu-categorias">
+                <a href="categorias/moda.html">Moda</a>
+                <a href="categorias/pets.html">Pets</a>
+                <a href="categorias/casa-decoracao.html"></a>
+                <a href="categorias/beleza-cuidados-pessoais.html"></a>
+                <a href="categorias/infantil.html"></a>
+                <a href="categorias/eletronicos.html"></a>
+            </nav>
+
+            <!-- BARRA DE PESQUISA DE PRODUTO -->
+            <form class="barradepesquisa">
+                <input
+                    type="text"
+                    id="campoBusca"
+                    name="busca"
+                    placeholder="Buscar Produtos..."
+                    required
+                    minlength="2"
+                    maxlength="50"
+                    pattern="[A-Za-zÀ-ÿ0-9 ]{2,50}" /> <!-- Input validado com regex -->
+
+                <button type="submit">🔍</button>
+            </form>
+
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- Produtos em oferta aqui -->
+        <section class="destaque">
+            <h2>🔥 Produtos em Oferta</h2>
+            <div class="lista-produtos">
+
+                <!-- Produto 1 -->
+                <div class="produto tecnologicos">
+                    <img src="img/tecnologicos/fone-001/fone_img1.jpg" alt="Fones de Ouvidos">
+                    <h3>Fone de Ouvidos</h3>
+                    <p>R$ 55,90</p>
+                    <a href="produto.html?id=1">Ver Detalhes</a>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto moda">
+                    <img src="img/moda/" alt="Roupa">
+                    <h3>Roupa</h3>
+                    <p>R$ 97,90</p>
+                    <a href="produto.html?id=2">Ver Detalhes</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="destaque">
+            <h2>⭐ Mais Vendidos</h2>
+            <div class="lista-produtos">
+
+                <div class="produto ???">
+                    <img src="" alt="Produto???">
+                    <h3>Nome do produto</h3>
+                    <p>R$ valor do produto</p>
+                    <a href="produto.html?id=?"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo à Minha Loja! Aqui você encontra produtos de qualidade, bom atendimento e preços justos. Trabalhamos para oferecer a melhor experiência de compra online, com foco em segurança, entrega rápida e confiança. Obrigado por visitar nossa loja!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
+        <p>
+            <a href="contato.html">Fale conosco</a> |
+            <a href="mailto:contato@minhaloja.com"></a> |
+            <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+        </p>
+    </footer>
+
 </body>
 </html>
