@@ -10,28 +10,20 @@
 </head>
 <body>
     <!-- CABEÇALHO -->
-    <header class="cabecalho">
-        <div class="linha-topo">
+    <header>
+        <div class="topo-header">
             <img src="img/" alt="Logo da Loja" class="logo">
-            
-            <h1 class="nomedaloja">Loja Online</h1>
 
             <nav class="navegacao">
                 <a href="login.html">Login</a>
                 <a href="carrinho.html">Carrinho</a>
             </nav>
+        </div>
 
-            <nav class="menu-categorias">
-                <a href="categorias/moda.html">Moda</a>
-                <a href="categorias/pets.html">Pets</a>
-                <a href="categorias/casa-decoracao.html"></a>
-                <a href="categorias/beleza-cuidados-pessoais.html"></a>
-                <a href="categorias/infantil.html"></a>
-                <a href="categorias/eletronicos.html"></a>
-            </nav>
-
-            <!-- BARRA DE PESQUISA DE PRODUTO -->
-            <form class="barradepesquisa">
+        <!-- BARRA DE PESQUISA DE PRODUTO -->
+        <div class="centralizado">
+            <h1 class="nome-loja">Nome da Loja</h1>
+            <form class="barra-pesquisa">
                 <input
                     type="text"
                     id="campoBusca"
@@ -41,11 +33,18 @@
                     minlength="2"
                     maxlength="50"
                     pattern="[A-Za-zÀ-ÿ0-9 ]{2,50}" /> <!-- Input validado com regex -->
-
                 <button type="submit">🔍</button>
             </form>
-
         </div>
+
+        <nav class="menu-categorias">
+            <a href="categorias/moda.html">Moda</a>
+            <a href="categorias/pets.html">Pets</a>
+            <a href="categorias/casa-decoracao.html">Casa e Decoracao</a>
+            <a href="categorias/beleza-cuidados-pessoais.html">Beleza e Cuidados Pessoais</a>
+            <a href="categorias/infantil.html">Infantil</a>
+            <a href="categorias/eletronicos.html">Eletronicos</a>
+        </nav>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
